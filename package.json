@@ -1,0 +1,23 @@
+{
+  "name": "blockchain-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "node_1": "nodemon --watch dev -e js dev/app.js 0 3001 http://localhost:3001 5001 ws://localhost:5001",
+    "node_2": "nodemon --watch dev -e js dev/app.js 1 3002 http://localhost:3002 5002 ws://localhost:5002",
+    "node_3": "nodemon --watch dev -e js dev/app.js 2 3003 http://localhost:3003 5003 ws://localhost:5003",
+    "node_4": "nodemon --watch dev -e js dev/app.js 3 3004 http://localhost:3004 5004 ws://localhost:5004"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
+    "request-promise": "^4.2.6",
+    "web3-eth-accounts": "^1.8.1",
+    "ws": "^8.12.0"
+  }
+}
